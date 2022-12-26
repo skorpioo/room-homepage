@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./style.css" />
+		<script defer src="./main.js"></script>
+		<title>Frontend Mentor | Room homepage</title>
+	</head>
+	<body>
+		<div class="overlay"></div>
+		<header class="header">
+			<nav class="header__nav" aria-label="primary navigation">
+				<button class="header__icon-open" aria-controls="primary-navigation" aria-expanded="false">
+					<img src="./images/icon-hamburger.svg" alt="" aria-hidden="true" />
+				</button>
+				<img class="header__logo" src="./images/logo.svg" alt="room logo" />
+				<div class="empty"></div>
+				<ul data-state="closed" id="primary-navigation">
+					<button class="header__icon-close" aria-controls="primary-navigation">
+						<img src="./images/icon-close.svg" alt="" aria-hidden="true" />
+					</button>
+					<div class="header__nav-links">
+						<li>Home</li>
+						<li>Shop</li>
+						<li>About</li>
+						<li>Contact</li>
+					</div>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<div class="grid">
+				<div class="grid__hero-images">
+					<div class="grid__img-slider-wrapper">
+						<picture class="grid__hero-img current-slide">
+							<source srcset="./images/desktop-image-hero-1.jpg" media="(min-width: 40em)" />
+							<img src="./images/mobile-image-hero-1.jpg" alt="table with white chairs" />
+						</picture>
+						<picture class="grid__hero-img">
+							<source srcset="./images/desktop-image-hero-2.jpg" media="(min-width: 40em)" />
+							<img src="./images/mobile-image-hero-2.jpg" alt="3 colourful chairs" />
+						</picture>
+						<picture class="grid__hero-img">
+							<source srcset="./images/desktop-image-hero-3.jpg" media="(min-width: 40em)" />
+							<img src="./images/mobile-image-hero-3.jpg" alt="black chair" />
+						</picture>
+					</div>
+				</div>
+
+				<div class="grid__nav-buttons">
+					<button class="previous inactive">
+						<img src="./images/icon-angle-left.svg" alt="" />
+					</button>
+					<button class="next">
+						<img src="./images/icon-angle-right.svg" alt="" />
+					</button>
+				</div>
+
+				<div class="grid__text">
+					<div class="grid__txt-slider-wrapper">
+						<div class="grid__text-item current-slide">
+							<h1>Discover innovative ways to decorate</h1>
+							<p>
+								We provide unmatched quality, comfort, and style for property owners across the country. Our
+								experts combine form and function in bringing your vision to life. Create a room in your own
+								style with our collection and make your property a reflection of you and what you love.
+							</p>
+							<button class="btn-text">Shop now</button>
+						</div>
+						<div class="grid__text-item">
+							<h1>We are available all across the globe</h1>
+							<p>
+								With stores all over the world, it's easy for you to find furniture for your home or place
+								of business. Locally, we’re in most major cities throughout the country. Find the branch
+								nearest you using our store locator. Any questions? Don't hesitate to contact us today.
+							</p>
+							<button class="btn-text">Shop now</button>
+						</div>
+						<div class="grid__text-item">
+							<h1>Manufactured with the best materials</h1>
+							<p>
+								Our modern furniture store provide a high level of quality. Our company has invested in
+								advanced technology to ensure that every product is made as perfect and as consistent as
+								possible. With three decades of experience in this industry, we understand what customers
+								want for their home and office.
+							</p>
+							<button class="btn-text">Shop now</button>
+						</div>
+					</div>
+				</div>
+
+				<img src="./images/image-about-dark.jpg" alt="" class="grid__img-dark" />
+				<div class="grid__about">
+					<h2>About our furniture</h2>
+					<p>
+						Our multifunctional collection blends design and function to suit your individual taste. Make
+						each room unique, or pick a cohesive theme that best express your interests and what inspires
+						you. Find the furniture pieces you need, from traditional to contemporary styles or anything
+						in between. Product specialists are available to help you create your dream space.
+					</p>
+				</div>
+				<img src="./images/image-about-light.jpg" alt="" class="grid__img-light" />
+			</div>
+		</main>
+	</body>
+</html>
