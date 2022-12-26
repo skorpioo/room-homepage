@@ -19,15 +19,17 @@
 				<img class="header__logo" src="./images/logo.svg" alt="room logo" />
 				<div class="empty"></div>
 				<ul data-state="closed" id="primary-navigation">
-					<button class="header__icon-close" aria-controls="primary-navigation">
-						<img src="./images/icon-close.svg" alt="" aria-hidden="true" />
-					</button>
-					<div class="header__nav-links">
+					<li class="button">
+						<button class="header__icon-close" aria-controls="primary-navigation">
+							<img src="./images/icon-close.svg" alt="" aria-hidden="true" />
+						</button>
+					</li>
+					<ul class="header__nav-links">
 						<li>Home</li>
 						<li>Shop</li>
 						<li>About</li>
 						<li>Contact</li>
-					</div>
+					</ul>
 				</ul>
 			</nav>
 		</header>
@@ -51,10 +53,10 @@
 				</div>
 
 				<div class="grid__nav-buttons">
-					<button class="previous inactive">
+					<button class="previous inactive" aria-label="Previous slide">
 						<img src="./images/icon-angle-left.svg" alt="" />
 					</button>
-					<button class="next">
+					<button class="next" aria-label="Next slide">
 						<img src="./images/icon-angle-right.svg" alt="" />
 					</button>
 				</div>
